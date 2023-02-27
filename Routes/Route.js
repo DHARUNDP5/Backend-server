@@ -6,9 +6,9 @@ import { login } from "../Controllers/Login.js";
 
 const Route = express.Router();
 
-Route.post("/signup",signup);
+Route.post("/signup", signup);
 
-Route.get("/login",login);
+Route.get("/login", login);
 
 
 export default Route;
