@@ -8,7 +8,7 @@ const Route = express.Router();
 
 Route.post("/signup",signup);
 
-Route.post("/login",login);
+Route.get("/login",login);
 
 
 export default Route;
