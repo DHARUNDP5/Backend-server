@@ -10,5 +10,4 @@ Route.post("/signup", signup);
 
 Route.get("/login", login);
 
-
 export default Route;
