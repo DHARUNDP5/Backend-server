@@ -6,6 +6,8 @@ import { login } from "../Controllers/Login.js";
 
 import { tweet } from "../Controllers/tweet.js"
 
+import {listTweet} from "../Controllers/list_tweet.js"
+
 const Route = express.Router();
 
 Route.post("/signup", signup);
@@ -13,5 +15,7 @@ Route.post("/signup", signup);
 Route.get("/login", login);
 
 Route.post("/tweet", tweet);
+
+Route.get("/gettweet",listTweet);
 
 export default Route;
