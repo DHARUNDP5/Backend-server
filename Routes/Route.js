@@ -8,6 +8,8 @@ import { tweet } from "../Controllers/tweet.js"
 
 import {listTweet} from "../Controllers/list_tweet.js"
 
+import { deleteTweet } from "../Controllers/Deletetweet.js";
+
 const Route = express.Router();
 
 Route.post("/signup", signup);
@@ -17,5 +19,7 @@ Route.get("/login", login);
 Route.post("/tweet", tweet);
 
 Route.get("/gettweet",listTweet);
+
+Route.delete("/deletetweet",deleteTweet);
 
 export default Route;
