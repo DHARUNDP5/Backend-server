@@ -10,7 +10,7 @@ export const tweet = async (req, res) => {
             return res.send(err);
         }
         return res.status(200).send({
-            message: "User's data have been added successfully!!",
+            message: "tweet successfully!!",
             response: 'success'
         });
     });
